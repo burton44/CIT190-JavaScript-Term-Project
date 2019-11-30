@@ -1,0 +1,237 @@
+body {
+    display:flex;
+    flex-direction: column;
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:1.5em;
+    background:black;
+    align-items: center;
+}
+a:link, a:visited, a:hover,a:active{
+	color:mediumseagreen;
+	text-shadow:1px 1px black;
+}
+header{
+    display:flex;
+    font-family: "Sawarabi Mincho";
+    flex-direction: column;
+    width:60%;
+	color:black;
+    padding:10px;
+    height:auto;
+    border: 8px solid black;
+	background:rgba(255,255,255, .8);
+    text-align:center;
+    text-shadow:1px 1px #555;
+    border-radius:40px;
+    z-index: 20;
+}
+section{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+	background:none;
+}
+nav {
+    align-content: center;
+    z-index:11;
+}
+nav ul {
+    background:rgba(255,255,255, .8);
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    display: inline-table;
+    color:white;
+    font-weight:900;
+}
+nav ul li {
+    display:inline-table;
+}
+nav ul li:hover a {
+    color:black;
+    text-decoration: none;
+}
+nav ul li a {
+    display: block;
+    padding: 25px;
+    color:white;
+    text-decoration: none;
+}
+nav ul li:hover {
+    background: rgba(29, 29, 29, 0.582);
+}
+nav ul li:hover>ul {
+    display:block;
+}
+
+nav ul ul {
+    display: none;
+    padding: 0px;
+    position: absolute;
+    top: 100%;
+    background:rgba(43, 117, 0, 0.61);
+    border:2px solid black;
+}
+nav ul ul li {
+    display:block;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    position: relative;
+    text-align:left;
+    margin:30px;
+}
+nav ul ul li a {
+    padding: 15px;
+    color: #757575;
+    border-radius:20px;
+    background:rgba(255,255,255, 1);
+}
+nav ul ul li a:hover {
+    background: black;
+    border-radius:20px;
+    color:lightgreen;
+}
+div{
+    color: black;
+    background:rgba(255,255,255, .8);
+    border-radius: 20px;
+}
+summary{
+	color:#339966;
+	text-shadow:1px 1px #555;
+	font-size:1.1em;
+}
+aside{
+    background:none;
+    align-content: center;
+    color:white;
+}
+footer {
+    width:400px;
+    bottom:0px;
+    border-radius:20px;
+    flex: 1;
+    background:rgba(255,255,255, .8);
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    opacity:.8;
+    z-index:10;
+}
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: rgba(43, 117, 0, 0.61); 
+    overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #000; /* Add a hover color */
+}
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window rather than the content*/
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 5px 5px 5px 5px;/* Rounded corners on the top right and bottom right side */
+    z-index:5;
+}
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+#transition{
+    transition: width 5s, height 5s, transform 5s;
+    transition-timing-function:ease-in;
+}
+#transition:hover{
+    width: 450px;
+    height: 450px;
+    transform: rotate(360deg);
+}
+#links {
+    top: 20px;
+    background-color:#561304;
+    left: 0px;
+}
+
+#myNMC {
+    top: 100px;
+    background-color:#98ab61;
+    left: -80px;
+}
+
+#github {
+    top: 155px;
+    background-color:#426d05;
+    left: -80px; 
+}
+
+#w3 {
+    top: 210px;
+    background-color: #213804;
+    left: -80px;
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%; /* this is being overriden in tablet and desktop */
+    float:left; /* setting defaults for everything including tablet and desktop */
+    padding:15px; /* setting defaults for everything including tablet and desktop */
+}
+@media (max-width: 768px) {
+    #mySidenav {
+      display: none;
+    }
+  }
+@media only screen and (min-width: 600px) {
+/* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    body{ 
+        max-width:1800px;
+        background:url('../media/matrix.jpg');
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-color:#111;
+    }
+}
+@media only screen and (min-width: 768px) {
+/* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}

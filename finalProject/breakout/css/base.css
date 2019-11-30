@@ -1,0 +1,10 @@
+* { padding: 0; 
+    margin: 0; }
+canvas { 
+    background-image:    url("../media/cavern.jpg");
+    background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
+    display: block; 
+    margin: 0 auto; 
+}
